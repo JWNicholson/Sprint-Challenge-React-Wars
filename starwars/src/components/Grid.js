@@ -15,14 +15,13 @@ export default function Grid(){
 
             setSwData(response.data.results)
             
-           
           })
           .catch(error => {
             console.log("the data was not return", error);
           });
       }, []);
             
-     
+     //Character card
     return(
       <div className="character-info">
 
