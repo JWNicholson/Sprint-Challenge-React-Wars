@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import Card from "./Card";
+import CharCard from "./Card";
 
 export default function Grid(){
     const [swData, setSwData] = useState([])
 
     useEffect(() => {
         axios
-          .get(`xhttps://swapi.co/api/people/`)
+          .get(`https://swapi.co/api/people/`)
           .then(response => {
             // console.log(response.data.results[0].name);
 
@@ -27,7 +27,7 @@ export default function Grid(){
 
 {swData.map(char => {
         return (
-          <Card
+          <CharCard
             key={char.index}
             name={char.name}
             gender={char.gender}
