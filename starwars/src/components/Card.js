@@ -24,12 +24,6 @@ const CharCard = props => {
         </CardBody>
       </Card>
       
-        <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
-        <CardTitle><h2>Character: {props.name}</h2></CardTitle>
-        <CardText><h3>Gender: {props.gender}</h3></CardText>
-        <CardText><h3>Date of birth: {props.bday}</h3></CardText>
-        <Button>Button</Button>
-      </Card>  
 
     </div>
    
