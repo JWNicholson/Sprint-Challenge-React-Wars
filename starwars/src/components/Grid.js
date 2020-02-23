@@ -7,7 +7,7 @@ export default function Grid(){
 
     useEffect(() => {
         axios
-          .get(`https://swapi.co/api/people/`)
+          .get(`xhttps://swapi.co/api/people/`)
           .then(response => {
             // console.log(response.data.results[0].name);
 
@@ -31,6 +31,7 @@ export default function Grid(){
             key={char.index}
             name={char.name}
             gender={char.gender}
+            bday={char.birth_year}
           />
         );
       })}
